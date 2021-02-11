@@ -174,7 +174,7 @@ A installation guide for getting Django setup on Heroku
 
 ### Setup Static Files:
 
-We suggest using [Amazon Web Service S3](http://www.kirr.co/exuykp/) for static files in general. However, if you want to use Heroku fr static files, do the following:
+We suggest using [Amazon Web Service S3](http://www.kirr.co/exuykp/) for static files in general. However, if you want to use Heroku for static files, do the following:
     
 1. Install whitenoise and add to `requirements.txt`:
     ```
@@ -216,7 +216,7 @@ We suggest using [Amazon Web Service S3](http://www.kirr.co/exuykp/) for static 
 
 3. Using [Amazon Web Service S3](http://www.kirr.co/exuykp/) for static files?
 
-    Ensure you do disable collecstatic from running everytime you push to Heroku (which causes errors). Re-enable after you setup S3 in your Django Project.
+    Ensure you do disable collectstatic from running everytime you push to Heroku (which causes errors). Re-enable after you setup S3 in your Django Project.
 
     ```
     #disable collectstatic
@@ -251,7 +251,7 @@ DEFAULT_FROM_EMAIL = "Justin <hungrypy@gmail.com>"
 ADMINS = [('Justin', EMAIL_HOST_USER)]
 MANAGERS = ADMINS
 ```
-If email is faiiling, then go to the folloing locations to unlock your gmail address:
+If email is failing, then go to the following locations to unlock your gmail address:
 - [https://www.google.com/settings/security/lesssecureapps](https://www.google.com/settings/security/lesssecureapps)
 
 - [https://accounts.google.com/DisplayUnlockCaptcha](https://accounts.google.com/DisplayUnlockCaptcha)
